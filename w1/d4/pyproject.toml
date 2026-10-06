@@ -1,0 +1,22 @@
+[project]
+name = "d4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "TufailMd", email = "jrtufailmd@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "groq>=1.7.0",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+d4 = "d4:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
